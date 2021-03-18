@@ -14,3 +14,14 @@ pub fn greet(name: &str) {
 pub fn palindrome() -> i32 {
     return 10;
 }
+
+
+#[cfg(test)]
+mod tests {
+    use super::palindrome;
+
+    #[test]
+    fn test_palindrome() {
+        assert_eq!(palindrome(), 10);
+    }
+}
